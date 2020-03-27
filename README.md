@@ -12,4 +12,7 @@ J'ai créer 9 dossier d'une page chacun qui traite de :
 07-Progresse Bars
 08-Tooltips
 09-Modals
+10-Navbar
+11-Scrollspy
+12-Carousel
 En espérant que ça puisse aider si certains ont du mal 
