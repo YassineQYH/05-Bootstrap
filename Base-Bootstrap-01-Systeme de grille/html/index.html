@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<!-- HEAD --><!-- HEAD --><!-- HEAD -->
+<head>
+    <!-- Initialiser la largeur de notre viewport avec celle du device & le niveau de zoom initial est à 1 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8"> <!-- charset="UTF-8" :: Pour régler les problème d'accent etc -->
+    <!-- Lien pour utiliser bootstrap en CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+
+
+<!-- BODY --><!-- BODY --><!-- BODY -->
+<body>
+    <!-- Les conteneurs peuvent être de 2 types différent : Soit à largeur fixe, soit à total largeur(ça va prendre toute la largeur du viewport).  -->
+    <div class="container" style="background-color: beige;"> <!-- J'ai mis une couleur de fond pour mieux voir la div -->
+        <!-- Comment spécifier les type de container : avec des class CSS.  -->
+        <!-- class="container" :: VEUT DIRE Container à largeur fixe MAIS dépend de la catégorie de la taille de l'écran dans lequel je me trouve.-->
+        <!-- à partir de 768px et moins il prend toute la largeur du navigateur. -->
+        <!-- class="container-fluide" :: VEUT DIRE que le container prend toute la largeur-->
+        <h1>A la dérive</h1>
+    </div>
+    <div class="container-fluide" style="background-color: beige;" >
+        <p style="text-align: center;">Un blog collaboratif de developpeurs web dérivant délibérément au milieu de l'espace</p>
+    </div>
+
+
+    <div class="container">
+        <div class="row"> <!-- Une ligne -->
+            <!-- < à 768px (xs)=1 (par défaut) // > à 768(sm) 2 par largeur // > 992(md) 3 par largeur // > 1200 (lg) 4 par ligne--> 
+            <!-- sur 12 à chaque fois, pour sm par exemple si on en veut 2 par ligne il faut faire 12/2 ce qui fait 6 -->
+            <div id="block_1" class="col-sm-6 col-md-4 col-lg-12" style="border: 1px solid grey;">
+                <h1>Article title<small>1</small></h1><!-- small = mettre en plus petit -->
+                <!-- class="text-primary" il a mis le text en bleu // text-success = vert // text-warning = marron // text-danger = rouge // bg = background-->
+                <!-- Bootstrap à mis pas mal de class CSS et d'élément par défaut à qui il a donné un style prêt à l'emploi. -->
+                <p><span class="text-primary">Lorem ipsum dolor</span> sit amet consectetur <span class="bg-success">adipisicing elit.</span> Perferendis aspernatur aliquam magnam perspiciatis repudiandae quo, eum nihil tempora? Esse rem asperiores, tenetur nobis mollitia cum ipsum, nemo accusantium aperiam eius, temporibus aut? Non at tenetur iste quis.</p>
+                <p><strong>Meta info</strong></p>
+            </div>
+            <div id="block_2" class="col-sm-6 col-md-4 col-lg-3" style="border: 1px solid grey;">
+                <h1>Article title<mark>important</mark></h1><!-- mark = mettre en valeur -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aspernatur aliquam magnam perspiciatis repudiandae quo, eum nihil tempora? Esse rem asperiores, tenetur nobis mollitia cum ipsum, nemo accusantium aperiam eius, temporibus aut? Non at tenetur iste quis.</p>
+                <p><strong>Meta info</strong></p>
+            </div>
+            <div id="block_3" class="col-sm-6 col-md-4 col-lg-3" style="border: 1px solid grey;">
+                <h1>Article title</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aspernatur aliquam magnam perspiciatis repudiandae quo, eum nihil tempora? Esse rem asperiores, tenetur nobis mollitia cum ipsum, nemo accusantium aperiam eius, temporibus aut? Non at tenetur iste quis.</p>
+                <p><strong>Meta info</strong></p>
+            </div>
+            <div id="block_4" class="col-sm-6 col-md-4 col-lg-3" style="border: 1px solid grey;">
+                <h1>Article title</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aspernatur aliquam magnam perspiciatis repudiandae quo, eum nihil tempora? Esse rem asperiores, tenetur nobis mollitia cum ipsum, nemo accusantium aperiam eius, temporibus aut? Non at tenetur iste quis.</p>
+                <p><strong>Meta info</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div id="search" class="col-lg-12" style="border: 1px solid grey;">
+            <input type="search" id="site-search" name="q"
+            aria-label="Search through site content">
+            <button style="background-color:mediumslateblue; border-radius:10%;">Search</button>
+        </div>
+
+        <div class="row">
+            <div id="cat_1" class="col-lg-12" style="border: 1px solid grey; background-color: khaki; font-weight: bold;" >
+                <p>Catégories</p>
+            </div>
+            <div id="cat_2" class="col-lg-12" style="border: 1px solid grey;">
+                <p>Teamback</p>
+            </div>
+            <div id="cat_3" class="col-lg-12" style="border: 1px solid grey;">
+                <p>Teamfront</p>
+            </div>
+            <div id="cat_4" class="col-lg-12" style="border: 1px solid grey;">
+                <p>Collaboration</p>
+            </div>
+            <div id="cat_5" class="col-lg-12" style="border: 1px solid grey;">
+                <p>Ma vie de dev</p>
+            </div>
+            <div id="cat_6" class="col-lg-12" style="border: 1px solid grey; background-color: khaki; font-weight: bold;">
+                <p>Auteurs</p>
+            </div>
+            <div id="cat_7" class="col-lg-12" style="border: 1px solid grey;">
+                <p>Maxime</p>
+            </div>
+            <div id="cat_8" class="col-lg-12" style="border: 1px solid grey;">
+                <p>Dario</p>
+            </div>
+            <div id="cat_9" class="col-lg-12" style="border: 1px solid grey;">
+                <p>Lucie</p>
+            </div>
+            <div id="cat_10" class="col-lg-12" style="border: 1px solid grey;">
+                <p>Anthony</p>
+            </div>
+        </div>
+        
+    </div>
+</body>
+
+
+<!-- FOOTER --><!-- FOOTER --><!-- FOOTER -->
+<footer>
+
+
+
+</footer>
+
+</html>

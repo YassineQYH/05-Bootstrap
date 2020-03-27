@@ -1,0 +1,6 @@
+Catégories de taille d'écran.
+
+xs < 768px      Phones              container=all
+sm >= 768px     Tablettes           container=750px
+md >= 992px     Desktop             container=970px
+lg >= 1200px    Large Desktop       container=1170px

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<!-- HEAD --><!-- HEAD --><!-- HEAD -->
+<head>
+    <!-- Initialiser la largeur de notre viewport avec celle du device & le niveau de zoom initial est à 1 -->
+    <!-- BOOTSTRAP V4 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8"> <!-- charset="UTF-8" :: Pour régler les problème d'accent etc -->
+    <!-- Lien pour utiliser bootstrap en CDN -->
+<!--     
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+-->
+    <!-- Pour pouvoir utiliser les plug-in JS de bootstrape qui repose sur Jquerry 1.12.4 ET 3.4.1 -->
+<!--     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+-->
+
+
+    <!-- BOOTSTRAP V3.3.7 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+    <!-- BOOTSTRAP V3.3.6 -->           <!-- POUR LE BOUTON DEROULANT MENU -->
+  <!--   
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> 
+    -->
+      <!-- 
+          Pour pouvoir utiliser les plug-in JS de bootstrape qui repose sur Jquerry 1.11.3 ET 3.3.6 
+        -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+
+</head>
+
+
+<!-- BODY --><!-- BODY --><!-- BODY -->
+<body><!-- CAROUSEL -->
+
+    <!-- On lui donne une classe carousel et ont choisis l'animation, ici, slide -->
+    <!-- class="carousel slide" :: slide est le choix de l'animation qu'il y aura entre mes 2 carousel -->
+    <div id="mon_carousel" class="carousel slide=" data-ride="carousel" style="max-width: 400px;"> <!-- Je limite mes images -->
+
+        <ol class="carousel-indicators"><!-- les indicateurs du carousel -->
+            <li data-target="#mon_carousel" data-slide-to="0" class="active"></li><!-- J'ai relié cet indicateur (#mon_carousel) au slide 0 de mon carousel. // Un des éléments doit commencer avec la class active. C'est l'élément qui sera actif en 1er au début du carousel. -->
+            <li data-target="#mon_carousel" data-slide-to="1"></li>
+            <li data-target="#mon_carousel" data-slide-to="2"></li>
+            <li data-target="#mon_carousel" data-slide-to="3"></li>
+        </ol>
+
+        <div class="carousel-inner" role="listbox"><!-- inner ::: l'intérieur -->
+            <!-- Maintenant, on fait les items de notre carousel // Donner la classe item-->
+            <div class="item active"> <!-- active =  C'est l'élément qui sera actif en 1er au début du carousel -->
+                <img src="../images/la-pizza.jpg">
+                <div class="carousel-caption"><!-- Mettre une légende à cette image / caption = légende en anglais -->
+                    <h3>Blague - Pizza</h3>
+                </div>
+            </div>
+            <div class="item "> 
+                <img src="../images/la-vielle.jpg">
+                <div class="carousel-caption">
+                    <h3>Blague - La vielle</h3>
+                </div>
+            </div>
+            <div class="item "> 
+                <img src="../images/quand-t_etait-jeune.jpg">
+                <div class="carousel-caption">
+                    <h3>Blague - Quand tu étais jeune</h3>
+                </div>
+            </div>
+            <div class="item "> 
+                <img src="../images/oiseau_politique.jpg">
+                <div class="carousel-caption">
+                    <h3>Blague - L'oiseau politique</h3>
+                </div>
+            </div>
+
+        </div>
+
+
+<!-- Maintenant, on rajoute encore d'autres éléments qui sont les flêches qu'on voit à gauche et à droite pour permettre à l'utilisateur de passer à la suivante. -->
+        <a href="#mon_carousel" class="left carousel-control" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span> <!-- l'icone du Chevron vers la gauche -->
+        </a>
+        <a href="#mon_carousel" class="right carousel-control" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span> <!-- l'icone du Chevron vers la droite -->
+        </a>
+    </div>
+
+</body>
+
+<!-- FOOTER --><!-- FOOTER --><!-- FOOTER -->
+<footer>
+
+
+
+</footer>
+
+</html>

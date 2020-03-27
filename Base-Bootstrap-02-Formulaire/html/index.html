@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<!-- HEAD --><!-- HEAD --><!-- HEAD -->
+<head>
+    <!-- Initialiser la largeur de notre viewport avec celle du device & le niveau de zoom initial est à 1 -->
+    <!-- BOOTSTRAP V4 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8"> <!-- charset="UTF-8" :: Pour régler les problème d'accent etc -->
+    <!-- Lien pour utiliser bootstrap en CDN -->
+<!--     
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+-->
+
+    <!-- BOOTSTRAP V3.3.7 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    
+</head>
+
+
+<!-- BODY --><!-- BODY --><!-- BODY -->
+<body>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <form class="form" style="margin:50px;"> <!-- form-inline = pour mettre sur une seul même ligne. -->
+
+                <div class="form-group has-error"><!-- class="form-group = pour que Bootstrap connaisse notre formulaire // Pour dire que c'est un groupe dans le formulaire. -->
+                    <label for="name">name</label>
+                    <input type="text" id="name" class="form-control input-lg"><!-- Pour chaque element il faut donner une classe. -->
+                    <!-- input-lg pour faire en sorte que le text rentré soit plus grand. -->
+                </div>
+                <div class="form-group">
+                    <label for="email">email</label>
+                    <input type="text" id="email" class="form-control">
+                </div>
+                <div class="form-group has-success">
+                    <label for="comment">comment</label>
+                    <textarea class="form-control" id="comment"></textarea>
+                </div>
+                <div class="checkbox"><!-- Checkbox = plusieurs valeurs parmi un groupe / radio = 1 seul valeur parmi un groupe -->
+                    <label><input type="checkbox" value="">Option 1</label>
+                </div>
+                <div >
+                    <label class="checkbox-inline"><input type="checkbox" value="">Option 2</label> <!-- checkbox-inline dans le label pour les mettre l'un à côté de l'autre. -->
+                    <label class="checkbox-inline"><input type="checkbox" value="" disabled>Option 3</label> <!-- Pour désactivé l'option (il est grisé et ne peut plus être choisis). -->
+                </div>
+
+                <button type="submit" class="btn btn-default">Submit</button>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+
+<!-- FOOTER --><!-- FOOTER --><!-- FOOTER -->
+<footer>
+
+
+
+</footer>
+
+</html>

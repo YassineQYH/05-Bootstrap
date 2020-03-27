@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<!-- HEAD --><!-- HEAD --><!-- HEAD -->
+<head>
+    <!-- Initialiser la largeur de notre viewport avec celle du device & le niveau de zoom initial est à 1 -->
+    <!-- BOOTSTRAP V4 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8"> <!-- charset="UTF-8" :: Pour régler les problème d'accent etc -->
+    <!-- Lien pour utiliser bootstrap en CDN -->
+<!--     
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+-->
+
+    <!-- BOOTSTRAP V3.3.7 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    
+</head>
+
+
+<!-- BODY --><!-- BODY --><!-- BODY -->
+<body>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <form class="form" style="margin:50px;"> <!-- form-inline = pour mettre sur une seul même ligne. -->
+
+                <div class="form-group has-error"><!-- class="form-group = pour que Bootstrap connaisse notre formulaire // Pour dire que c'est un groupe dans le formulaire. -->
+                    <label for="name">name</label>
+                    <input type="text" id="name" class="form-control input-lg"><!-- Pour chaque element il faut donner une classe. -->
+                    <!-- input-lg pour faire en sorte que le text rentré soit plus grand. -->
+                </div>
+                <div class="form-group">
+                    <label for="email">email</label>
+                    <input type="text" id="email" class="form-control">
+                </div>
+                <div class="form-group has-success">
+                    <label for="comment">comment</label>
+                    <textarea class="form-control" id="comment"></textarea>
+                </div>
+                <div class="checkbox"><!-- Checkbox = plusieurs valeurs parmi un groupe / radio = 1 seul valeur parmi un groupe -->
+                    <label><input type="checkbox" value="">Option 1</label>
+                </div>
+                <div >
+                    <label class="checkbox-inline"><input type="checkbox" value="">Option 2</label> <!-- checkbox-inline dans le label pour les mettre l'un à côté de l'autre. -->
+                    <label class="checkbox-inline"><input type="checkbox" value="" disabled>Option 3</label> <!-- Pour désactivé l'option (il est grisé et ne peut plus être choisis). -->
+                </div>
+
+                <a type="submit" class="btn btn-default">Default</a><!-- Que je mette un lien ou un bouton, ça revient au même. Ici, c'est la classe qu'on prend en compte. -->
+                <button type="submit" class="btn btn-primary btn-md">Primary</button> <!-- btn-md = la taille par défaut -->
+                <button type="submit" class="btn btn-success">Success</button>
+                <button type="submit" class="btn btn-info">Info</button>
+                <button type="submit" class="btn btn-warning btn-lg">Warning</button> <!-- btn-lg = pour agrandir le bouton -->
+                <button type="submit" class="btn btn-danger btn-xs">Danger</button><!-- btn-xs = pour rétrécir le bouton -->
+                <button type="submit" class="btn btn-link">Link</button>
+
+                <div>
+                    <button type="submit" class="btn btn-primary btn-block">Primary</button><!-- btn-block = le bouton prendra toute la largeur de son contenu (la taille du container)-->
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-primary btn-block active">Primary</button><!-- active = le bouton à l'air comme si il était appuyer. -->
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-primary btn-block disabled">Primary</button><!-- disabled = le bouton apparait désactivé (passer la souris dessus). -->
+                </div>
+                <div class="btn-group"><!-- Pour faire un group de bouton horizontalement collé -->
+                    <button type="button" class="btn btn-info">Button 1</button>
+                    <button type="button" class="btn btn-info">Button 2</button>
+                    <button type="button" class="btn btn-info">Button 3</button>
+                </div>
+                <div class="btn-group-vertical"><!-- Pour faire un group de bouton verticalement collé -->
+                    <button type="button" class="btn btn-success">Button 1</button>
+                    <button type="button" class="btn btn-success">Button 2</button>
+                    <button type="button" class="btn btn-success">Button 3</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+
+<!-- FOOTER --><!-- FOOTER --><!-- FOOTER -->
+<footer>
+
+
+
+</footer>
+
+</html>

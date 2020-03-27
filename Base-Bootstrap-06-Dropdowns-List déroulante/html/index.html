@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<!-- HEAD --><!-- HEAD --><!-- HEAD -->
+<head>
+    <!-- Initialiser la largeur de notre viewport avec celle du device & le niveau de zoom initial est à 1 -->
+    <!-- BOOTSTRAP V4 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8"> <!-- charset="UTF-8" :: Pour régler les problème d'accent etc -->
+    <!-- Lien pour utiliser bootstrap en CDN -->
+<!--     
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+-->
+    <!-- Pour pouvoir utiliser les plug-in JS de bootstrape qui repose sur Jquerry 1.12.4 ET 3.4.1 -->
+<!--     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+-->
+
+
+    <!-- BOOTSTRAP V3.3.7 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+    <!-- BOOTSTRAP V3.3.6 -->           <!-- POUR LE BOUTON DEROULANT MENU -->
+  <!--   
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> 
+    -->
+      <!-- 
+          Pour pouvoir utiliser les plug-in JS de bootstrape qui repose sur Jquerry 1.11.3 ET 3.3.6 
+        -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+</head>
+
+
+<!-- BODY --><!-- BODY --><!-- BODY -->
+<body>
+
+<!--  Une liste déroulante est composé de 2 parties : 
+        -La partie qui ouvre la liste déroulante (en général c'est un bouton)
+        -La liste déroulante elle même (ce qui va dérouler quand on va appuyer sur ce bouton)
+ -->
+ 
+    <div class="container" style="margin-top:50px;" >
+
+        <div class="dropdown"> <!-- Permet d'ouvrir la liste vers le bas // dropup = permet d'ouvrir la liste vers le haut -->
+            
+            <!-- Pour que ce soit un bouton avec la liste déroulante avec bootstrape il faut lui ajouter 2 choses :
+                -une classe CSS qui s'appel : dropdown-toggle 
+                -Nouvelle attribut HTML qui s'appel : data-toggle="dropdown"-->
+            <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">Fruits <span class="caret"></span></button><!-- span pour dire qu'il reste à la ligne // class="caret" pour rajouter un petit triangle -->
+
+                <ul class="dropdown-menu"> <!-- Lorsque je clique sur le bouton "Fruits" la liste apparait. -->
+                    <li class="disabled"><a href="#">Banane</a></li> <!-- disabled = désactivé -->
+                    <li><a href="#">Pomme</a></li>
+                    <li class="divider"></li>   <!-- Permet de mettre une ligne blanche dans la liste -->
+                    <li><a href="#">Poire</a></li>
+                    <li class="dropdown-header">Agrumes</li> <!-- dropdown-header = Permet de donner un titre à ma liste -->
+                    <li><a href="#">Orange</a></li>
+                    <li><a href="#">Pamplemousse</a></li>
+                </ul>
+
+        </div>
+    </div>
+</body>
+
+
+<!-- FOOTER --><!-- FOOTER --><!-- FOOTER -->
+<footer>
+
+
+
+</footer>
+
+</html>
